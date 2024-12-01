@@ -1,0 +1,520 @@
+
+
+.MainContainer{
+    display: flex;
+    margin-top: 70px; /* Additional gap if needed */
+    padding-top: 0; 
+    overflow: hidden; 
+}
+
+.NavigationMenu{
+    margin: 0px 20px 5px 5px;
+    position:fixed;
+    padding: 0px 20px 0px 0px;
+}
+
+.NavigationItems{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    gap: 0;
+    z-index: 1000;
+}
+
+.NavigationItems.show {
+    display: flex;
+    transform: translateX(0); /* When the menu is shown, it slides in */
+    z-index: 1000;
+    top: 62px;
+}
+
+
+.NavigationItems button{
+    background-color: transparent;
+    border: 1px solid ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0 inset;
+    margin: 5px 5px 0px 5px;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #613f2b; 
+    height: 33px;
+    width: 230px;
+    text-align: c;
+}
+.NavigationItems h2{
+    font-size: 25px;
+    color: #361500;
+    padding: 0;
+    margin: 0;
+    }
+
+
+.NavigationItems button:hover{
+    box-shadow: 0px 0px 15px inset;
+}
+.NavigationItems button.active{
+    box-shadow: 0px 0px 15px inset;
+    background-color: #361500;
+    color: #CBB381;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-left: 250px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Product Image */
+.product-image {
+    max-width: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 130px;
+    padding: 5px;
+}
+.product-image img{
+    max-width: 1200px;
+    height: 100%;
+}
+.product-image:hover {
+    transform: scale(1.2,1.2);
+    transition-duration: 3s ease-in-out;
+    
+}
+.product-description{
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.product-card h3 {
+    color: #361500;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-align: justify;
+}
+
+.product-card p {
+    font-size: 10px;
+    text-align: justify;
+    margin: 5px 0;
+    color: #361500;
+}
+
+
+
+
+.hamburger {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    font-size: 70px;
+    cursor: pointer;
+    color: white;
+}
+.hamburger:hover {
+    color: #6b4630;
+    transform: scale(1.2,1.2);
+}
+
+/* Hidden Navigation Menu */
+.NavigationMenu.hidden {
+    transform: translateX(-100%); /* Slide out of view */
+}
+
+.best-seller-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: transparent; /* Light beige background */
+    padding: 0px;
+    position: relative;
+    margin-left:300px; /* Space around the section */
+    z-index: 1; /* Ensure it's above other content if needed */
+    width: 100%; /* Add a max width for proper alignment */
+    border-radius: 8px; /* Rounded corners */
+    height: auto;
+}
+
+.vertical-title {
+    writing-mode: vertical-rl; /* Vertical text orientation */
+    text-orientation: upright;
+    font-weight: bold;
+    color: #361500; /* Coffee brown color */
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    height: 90%;/* Full height alignment */
+    display: flex; /* Align title within */
+    align-items: center; /* Center vertically */
+    align-content: center;
+    justify-content: center; /* Center horizontally */
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text:hover , .vertical-title:hover{
+    transform: translateY(-5px); /* Hover effect */
+    transition-duration: 1s;/
+}
+
+.text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6b4630;
+}
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b3028; /* Text color matching coffee theme */
+    text-align: justify;
+
+}
+
+.text .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #6b4630  ;
+}; /* Golden brown accent for price */
+
+
+.BESTimage {
+    display: flex; /* Ensures the image is centered if needed */
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    transition: all 0.5s ease; /* Smooth transition for hover */
+    padding: 0;
+}
+
+.BESTimage:hover {
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}
+
+.BESTimage img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover; /* Maintain aspect ratio, fill container */
+    transition: all 0.5s ease; /* Smooth transition for scaling */
+}
+
+/* Fix for overall layout spacing */
+.menu-category {
+    margin-top: 30px; /* Add spacing below menu categories */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4e8d4; /* Matches the coffee shop vibe */
+}
+
+
+@media (max-width: 768px) {
+    .NavigationItems {
+        display: none; /* Hide the navigation items on small screens */
+        padding-top: 10px;
+    }
+
+    .NavigationItems.show {
+        display: flex;
+        transform: translateX(0); /* When the menu is shown, it slides in */
+        background-color: rgb(203, 179, 129,0.9);
+    }
+
+    .NavigationItems.show button{
+        font-size: 20px;
+        font-weight: 700;
+        color: #CBB381; 
+        height: 55px;
+        background-color: #613f2b;
+        border: 1px solid ;
+        border-radius: 20px;
+        box-shadow: 0px 0px 0 inset;
+        width: 350px;
+    }
+    .NavigationItems h2{
+        font-size: 40px;
+        }
+    .NavigationItems button:hover{
+        box-shadow: 0px 0px 15px inset;
+        color: #613f2b;
+        background-color: #ceb6a6;
+    }
+    .NavigationItems button.active{
+        box-shadow: 0px 0px 15px inset;
+        background-color: #361500;
+        color: #CBB381;
+    }
+
+    .MainContainer {
+        flex-direction: column; /* Stack the navigation menu and product grid */
+        height: auto;
+    }
+
+    .NavigationItems button {
+        font-size: 24px; /* Adjust button font size */
+        height: auto; /* Allow buttons to resize */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        margin-left: auto;
+    }
+    .product-card {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+    }
+
+    .product-image {
+        max-width: 100%;
+        height: 100%; /* Smaller image size */
+    }
+
+    .product-card h3 {
+        font-size: 28px; /* Adjust title size */
+    }
+
+    .product-card p {
+        font-size: 20px; /* Adjust description size */
+    }
+
+
+    .best-seller-section {
+        display:block;
+        margin: 0px 20px 50px 90px; /* Space around the section */
+        z-index: 1; /* Ensure it's above other content if needed */
+        width: 90%; /* Add a max width for proper alignment */
+        border-radius: 8px; /* Rounded corners */
+        height:auto;
+    }
+    .content {
+        display: flex;
+        gap: 5px;
+    }
+    .text h3 {
+        font-size: 35px;
+        font-weight: bold;
+        color: #6b4630;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    
+    .text p {
+        font-size: 22px;
+        line-height: 1.5;
+        color: #4b3028; /* Text color matching coffee theme */
+    
+    }
+    
+    .text .price {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #6b4630  ;
+    }; /* Golden brown accent for price */
+    
+    .BESTimage {
+        width: 100%; /* Adjust the container size */
+        height: auto;
+    }
+    .BESTimage img {
+        width: 100%; /* Adjust the image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .vertical-title {
+        writing-mode:horizontal-tb;
+        font-weight: bold;
+        color: #361500; /* Coffee brown color */
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        height: 100%; /* Full height alignment */
+        display: flex; /* Align title within */
+        align-items: center; /* Center vertically */
+        align-content: center;
+        justify-content:center; /* Center horizontally */
+    }
+
+    .hamburger {
+        display: block; 
+        top: 60px;
+        left: 2%;
+        font-size: 40px;
+        position: fixed;
+        z-index: 1001;
+    }
+
+}
+
+
+/* Small Screens: Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .NavigationItems {
+        padding-top: 50px;
+    }
+    .NavigationItems.show {
+        top: 60px;
+    }
+
+    .NavigationItems.show button{
+        font-size: 15px;
+        height: 40px;
+        width: 240px;
+    }
+    .NavigationItems h2{
+        font-size: 18px;
+        }
+    .best-seller-section h1 {
+            font-size: 40px;
+        }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .product-card {
+        padding: 10px; /* Add some breathing room */
+    }
+
+    .product-image {
+        width: 80%; /* Smaller size for images */
+    }
+
+    .product-card h3 {
+        font-size: 20px; /* Smaller title size */
+    }
+
+    .product-card p {
+        font-size: 15px; /* Smaller description size */
+    }
+
+    .best-seller-section {
+        display:block;
+        margin: 10px 20px 50px 60px; /* Space around the section */
+        z-index: 1; /* Ensure it's above other content if needed */
+        width: 90%; /* Add a max width for proper alignment */
+        border-radius: 8px; /* Rounded corners */
+        height: auto;
+    }
+    .content {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .text h3 {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    .text p {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #4b3028; /* Text color matching coffee theme */
+    
+    }
+    
+    .text .price {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #6b4630  ;
+    }; /* Golden brown accent for price */
+    
+    .BESTimage {
+        width: 100%; /* Adjust the container size */
+        height: auto;
+    }
+    .BESTimage img {
+        width: 100%; /* Adjust the image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .vertical-title {
+        writing-mode:horizontal-tb;
+        font-weight: bold;
+        color: #361500; /* Coffee brown color */
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 10px;
+        height: 100%; /* Full height alignment */
+        display: flex; /* Align title within */
+        align-items: center; /* Center vertically */
+        align-content: center;
+        justify-content:flex-start; /* Center horizontally */
+    }
+
+    .hamburger {
+        top: 60px;
+        left: 2%;
+        font-size: 45px;
+        position: fixed;
+    }
+    
+
+}
+
+
+

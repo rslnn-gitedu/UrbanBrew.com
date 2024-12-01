@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/BodyandNav.css">
+    <link rel="stylesheet" href="/css/Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>UrbanBrewNonCoffee-BasedDrinks</title>
+</head>
+<body>
+    
+    <nav class="NavigationBar">
+        <div class="NavigationContent">
+        <section class="NavigationBarLOGO">
+            <a href="/html/Home.html"><img src="/img/LOGO/LOGO.png" alt=""></a>
+            <a href="/html/Home.html" id="NavUrbanBrew">URBAN BREW</a>
+        </section>
+        <button class="hamburgerTOP" onclick="toggleNavBar()">☰</button>
+        <section class="NavigationBarItems">
+            <a href="/html/StoreLocation.html"><i class="fa-solid fa-location-dot"></i>STORE LOCATION</a>
+            <a href="/html/About.html"><i class="fa-solid fa-address-card"></i>ABOUT</a>
+            <a href="/html/Menu.html"><i class="fa-solid fa-bars"></i>MENU</a>
+        </section>
+        </div>
+    </nav>
+
+    <main class="MainContainer">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="NavigationItems">
+                <h2>DRINKS</h2>
+                <a href="/html/Menu-CoffeeBased.html"><button class="Tab">COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-NonCoffeeDrinks.html"><button class="Tab">NON COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-TeaBased.html"><button class="Tab">TEA-BASED DRINKS</button></a>
+                <a href="/html/Menu-FruitBased.html"><button class="Tab">FRUIT-BASED DRINKS</button></a>
+                <a href="/html/Menu-AlcoholBased.html"><button class="Tab">ALCOHOL-BASED DRINKS</button></a>
+                <h2>FOODS</h2>
+                <a href="/html/Menu-Appetizer.html"><button class="Tab">APPETIZER</button></a>
+                <a href="/html/Menu-RiceMeals.html"><button class="Tab">RICE MEALS</button></a>
+                <a href="/html/Menu-Pasta.html"><button class="Tab">PASTA</button></a>
+                <a href="/html/Menu-Pastries.html"><button class="Tab">PASTRIES</button></a>
+                <a href="/html/Menu-Sandwiches.html"><button class="Tab">SANDWICHES</button></a>
+                <a href="/html/Menu-Pizza.html"><button class="Tab">PIZZA</button></a>
+                <a href="/html/Menu-PetFood.html"><button class="Tab">PET FOOD</button></a>
+            </div>
+        </nav>
+
+
+        <!-- Add product grid -->
+        <div class="product-grid">
+
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="/img/NonCoffee/Vanilla.png" alt="Choco Vanilla" class="product-image">
+                <div class="product-description">
+                    <h3>Choco Vanilla</h3>
+                    <p>A creamy blend of rich chocolate and smooth vanilla flavors.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/Caramel_Delight.png" alt="Caramel Delight" class="product-image">
+                <div class="product-description">
+                    <h3>Caramel Delight</h3>
+                    <p>Sweet caramel goodness with a velvety finish.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/ClassicChocolate.png" alt="Classic Chocolate" class="product-image">
+                <div class="product-description">
+                    <h3>Classic Chocolate</h3>
+                    <p>A comforting, rich, and creamy chocolate drink.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/Cookies_Cream.png" alt="Cookies & Cream" class="product-image">
+                <div class="product-description">
+                    <h3>Cookies & Cream</h3>
+                    <p>A luscious mix of crushed cookies and creamy milk.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/HazelnutBliss.png" alt="Hazelnut Bliss" class="product-image">
+                <div class="product-description">
+                    <h3>Hazelnut Bliss</h3>
+                    <p>Smooth hazelnut-infused drink for a nutty treat.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/WhiteChocolateDream.png" alt="White Chocolate Dream" class="product-image">
+                <div class="product-description">
+                    <h3>White Chocolate Dream</h3>
+                    <p>Creamy and sweet white chocolate indulgence.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/MintChocoFrost.png" alt="Mint Choco Frost" class="product-image">
+                <div class="product-description">
+                    <h3>Mint Choco Frost</h3>
+                    <p>Refreshing mint paired with rich chocolate for a cool twist.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/HoneyCream_Milk.png" alt="Honey Cream Milk" class="product-image">
+                <div class="product-description">
+                    <h3>Honey Cream Milk</h3>
+                    <p>Sweet honey swirled in frothy milk for a gentle delight.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/Cinnamon_Milkshake.png" alt="Cinnamon Milkshake" class="product-image">
+                <div class="product-description">
+                    <h3>Cinnamon Milkshake</h3>
+                    <p>A warm, spiced cinnamon flavor blended with creamy milk.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/NonCoffee/VanillaBean.png" alt="Vanilla Bean Shake" class="product-image">
+                <div class="product-description">
+                    <h3>Vanilla Bean Shake</h3>
+                    <p>Pure vanilla bean essence blended into a silky milkshake.</p>
+                    <p>Tall    - ₱139</p>
+                    <p>Venti   - ₱159</p>
+                    <p>Grande  - ₱179</p>
+                </div>
+            </div>
+            
+        </div>
+                    
+    </main>
+
+    <footer class="footer">
+        © 2024 Urban Brew. All rights reserved.
+    </footer>
+
+    <script src="/Javascript/BodyAndNav.js"></script>
+    <script src="/Javascript/Menu.js"></script>
+</body>
+</html>

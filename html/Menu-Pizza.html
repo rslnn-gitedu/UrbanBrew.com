@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/BodyandNav.css">
+    <link rel="stylesheet" href="/css/Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>UrbanBrewPizza</title>
+</head>
+<body>
+    
+    <nav class="NavigationBar">
+        <div class="NavigationContent">
+        <section class="NavigationBarLOGO">
+            <a href="/html/Home.html"><img src="/img/LOGO/LOGO.png" alt=""></a>
+            <a href="/html/Home.html" id="NavUrbanBrew">URBAN BREW</a>
+        </section>
+        <button class="hamburgerTOP" onclick="toggleNavBar()">☰</button>
+        <section class="NavigationBarItems">
+            <a href="/html/StoreLocation.html"><i class="fa-solid fa-location-dot"></i>STORE LOCATION</a>
+            <a href="/html/About.html"><i class="fa-solid fa-address-card"></i>ABOUT</a>
+            <a href="/html/Menu.html"><i class="fa-solid fa-bars"></i>MENU</a>
+        </section>
+        </div>
+    </nav>
+
+    <main class="MainContainer">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="NavigationItems">
+                <h2>DRINKS</h2>
+                <a href="/html/Menu-CoffeeBased.html"><button class="Tab">COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-NonCoffeeDrinks.html"><button class="Tab">NON COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-TeaBased.html"><button class="Tab">TEA-BASED DRINKS</button></a>
+                <a href="/html/Menu-FruitBased.html"><button class="Tab">FRUIT-BASED DRINKS</button></a>
+                <a href="/html/Menu-AlcoholBased.html"><button class="Tab">ALCOHOL-BASED DRINKS</button></a>
+                <h2>FOODS</h2>
+                <a href="/html/Menu-Appetizer.html"><button class="Tab">APPETIZER</button></a>
+                <a href="/html/Menu-RiceMeals.html"><button class="Tab">RICE MEALS</button></a>
+                <a href="/html/Menu-Pasta.html"><button class="Tab">PASTA</button></a>
+                <a href="/html/Menu-Pastries.html"><button class="Tab">PASTRIES</button></a>
+                <a href="/html/Menu-Sandwiches.html"><button class="Tab">SANDWICHES</button></a>
+                <a href="/html/Menu-Pizza.html"><button class="Tab">PIZZA</button></a>
+                <a href="/html/Menu-PetFood.html"><button class="Tab">PET FOOD</button></a>
+            </div>
+        </nav>
+
+
+        <!-- Add product grid -->
+        <div class="product-grid">
+
+            <!-- Product Card Example -->
+            <div class="product-card">
+                <img src="/img/PIZZA/longganisa-onion.png" alt="Longanniza" class="product-image">
+                <div class="product-description">
+                    <h3>Longanniza</h3>
+                    <p>Pizza topped with local longganisa sausage.</p>
+                    <p>₱397</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/pepperoni.png" alt="Pepperoni" class="product-image">
+                <div class="product-description">
+                    <h3>Pepperoni</h3>
+                    <p>Classic pizza with pepperoni slices.</p>
+                    <p>₱429</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/caesar_salad.png" alt="Ceazar Salad" class="product-image">
+                <div class="product-description">
+                    <h3>Ceazar Salad</h3>
+                    <p>Pizza inspired by Caesar salad flavors.</p>
+                    <p>₱429</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/shabu_shabu.png" alt="Shabu Shabu" class="product-image">
+                <div class="product-description">
+                    <h3>Shabu Shabu</h3>
+                    <p>₱429</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/all_meat.png" alt="All Meat" class="product-image">
+                <div class="product-description">
+                    <h3>All Meatt</h3>
+                    <p>Loaded with a variety of meats.</p>
+                    <p>₱439</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/UrbanPizza.png" alt="Urban Pizza" class="product-image">
+                <div class="product-description">
+                    <h3>Urban Pizza</h3>
+                    <p>Signature house pizza with unique toppings.</p>
+                    <p>₱429</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/combination.png" alt="Combi Pizza" class="product-image">
+                <div class="product-description">
+                    <h3>Combi Pizza</h3>
+                    <p>A combination of classic pizza flavors.</p>
+                    <p>₱479</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/PIZZA/quesadilla.png" alt="Quesadilla" class="product-image">
+                <div class="product-description">
+                    <h3>Quesadilla</h3>
+                    <p>Cheesy Mexican-style flatbread pizza.</p>
+                    <p>₱385</p>
+                </div>
+            </div>
+            
+            
+        </div>
+                    
+    </main>
+
+    <footer class="footer">
+        © 2024 Urban Brew. All rights reserved.
+    </footer>
+
+    <script src="/Javascript/BodyAndNav.js"></script>
+    <script src="/Javascript/Menu.js"></script>
+</body>
+</html>

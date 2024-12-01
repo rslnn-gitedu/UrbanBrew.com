@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+html, body {
+    height: auto; /* Make sure the body takes the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%;
+}   
+
+body{
+    margin-top: 90px;
+    padding: 0;
+    font-family:'Inter', sans-serif;
+    max-width: 100vw;
+    height: auto;
+    font-weight: 500;
+    background-image: url(/img/background/BACKGROUNDOWL.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.hamburgerTOP {
+    display: none; 
+    position: fixed;
+    top: 15px;
+    right: 180px; /* Distance from the right edge */
+    z-index: 1001;
+    background-color: transparent;
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.hamburgerTOP:hover {
+    color: #CBB381;
+    transform: scale(1.1,1.1);
+}
+
+i{
+    margin: 0px 10px 0px 0px;
+}
+
+.NavigationBar{
+    width: 100%;
+    background-color: #361500 ;
+    margin: 0;
+    padding:  10px  ;
+    position: fixed;
+    top: 0;
+    height: 40px; /* Set a fixed height for the navbar */
+    z-index: 1000; /* Ensure it's higher than other elements */
+    cursor:default; 
+    align-content: center;
+}
+
+.NavigationContent{
+    display: flex;
+    align-content: center;
+}
+
+.NavigationBarLOGO{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    width: 50%;
+}
+
+.NavigationBarLOGO a{
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    margin: 0% 0% 0% 1%;
+    width: 100px;
+    height: 30px;
+}
+
+#NavUrbanBrew{
+    width: 500px;
+    align-content:center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.NavigationBarLOGO img{
+    margin: -5px 0px 0px 0px;  
+    width: 40px;
+    height: 40px;
+    align-content: center;
+
+}
+
+.NavigationBarItems{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 0px 0px 210px;
+    padding: 0;
+    gap: 40px;
+}
+
+.NavigationBarItems a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.NavigationBarItems a:hover{
+    text-decoration: none;
+    color: #CBB381;
+}
+
+
+#NavUrbanBrew{
+    margin-right: 53%;
+}
+
+.AboutUs{
+    margin: 10px ;
+    padding: 0px 10px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 10px;
+    height: auto;
+    width: auto;
+}
+
+
+
+.Contact i , .Location i, .StoreHours i{
+    display: block;
+    font-size: 50px;
+    text-align: justify;
+    color: #341400;
+}
+
+.AboutUs p{
+    font-size: 17px;
+    color: #361500;
+}
+.AboutUs h2{
+    font-size: 50px;
+    color: #6b4630;
+    margin: 15px ;
+}
+a{
+    text-decoration: none;
+}
+
+.contact-item , .Location-item, .storeHours-item {
+    display: flex; /* Ensures horizontal alignment */
+    align-items: flex-start; /* Vertically centers items */
+    gap: 0px; /* Adds space between icon and text */
+    margin-bottom: 5px; /* Adds space between contact items  */
+    word-break: break-all;
+}
+
+.contact-item p , .Location-item p, .storeHours-item p  {
+    margin: 0; /* Removes default paragraph margin */
+    line-height: 1.5; /* Optional: Adjusts spacing within the paragraph */
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+    padding:  0px 10px  ;
+    font-size: 1rem;
+    background-color: #361500;
+    color: #fff;
+    z-index: 1001;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        background-image: url(/img/background/2.png);
+    }
+    .NavigationBarItems {
+        display: none; /* Hidden initially */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        background-color: #361500;
+        position: absolute;
+        top: 60px; /* Place below navbar */
+        right: 20px;
+        width: 40%;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+ 
+
+    .NavigationBarItems.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .NavigationBarItems.show a{
+        font-size: 25px;
+    }
+
+    .hamburgerTOP {
+        display: block; /* Display hamburger icon */
+        right: 70px; /* Distance from the right edge */
+        top: -1px;
+        font-size: 45px;
+    }
+    
+    .NavigationBarItems a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 5px 0; /* Add spacing between links */
+    }
+    .NavigationBarLOGO a{
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .NavigationBarLOGO img{
+        font-size: 50%; /* Adjust font size for smaller screens */
+    }
+
+
+    .AboutUs{
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    .About{
+        grid-column: 1/4;
+        margin-bottom: 0px;
+    }
+
+    .Contact i , .Location i, .StoreHours i{
+        font-size: 30px;
+    }
+    
+    .AboutUs p{
+        font-size: 14px;
+    }
+    .AboutUs h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact-item , .Location-item, .storeHours-item {
+        margin: 0px; /* Adds space between contact items  */
+        word-break: break-all;
+        padding-bottom: 50px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .hamburgerTOP {
+        top: -1px;
+        right: 25px; /* Distance from the right edge */
+        font-size: 40px;
+    }  
+    .NavigationBarItems.show a{
+        font-size: 15px;
+    }
+
+    .NavigationBarLOGO a{
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .NavigationBarLOGO img{
+        font-size: 50%; /* Adjust font size for smaller screens */
+    }
+
+    .NavigationBarLOGO{
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        padding: 0;
+        width: 50%;
+    }
+
+    #NavUrbanBrew{
+        width: 500px;
+        align-content:center;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    
+    .NavigationBarLOGO img{
+        margin: -5px 0px 0px 0px;  
+        width: 40px;
+        height: 40px;
+        align-content: center;
+    
+    }
+    
+
+    .AboutUs{
+        column-gap: 0px;
+        display: block;
+        margin: 0;
+    }
+
+    .Contact i , .Location i, .StoreHours i{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .AboutUs p{
+        font-size: 12px;
+        text-align: center;
+        color: #361500;
+    }
+    .About p{
+        text-align: justify;
+    }
+    .AboutUs h2{
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .Contact  , .Location , .StoreHours {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        align-content: start;
+
+    }
+    
+    .contact-item , .Location-item, .storeHours-item {
+        display: block;
+        
+        padding-bottom: 0px;
+    }
+    .Location-item{
+        padding-bottom: 30px;
+    }
+
+}
