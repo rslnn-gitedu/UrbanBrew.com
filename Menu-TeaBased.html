@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/BodyandNav.css">
+    <link rel="stylesheet" href="/css/Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>UrbanBrewTea-BasedDrinks</title>
+</head>
+<body>
+    
+    <nav class="NavigationBar">
+        <div class="NavigationContent">
+            <section class="NavigationBarLOGO">
+                <a href="/html/Home.html"><img src="/img/LOGO/LOGO.png" alt=""></a>
+                <a href="/html/Home.html" id="NavUrbanBrew">URBAN BREW</a>
+            </section>
+            <button class="hamburgerTOP" onclick="toggleNavBar()">☰</button>
+            <section class="NavigationBarItems">
+                <a href="/html/StoreLocation.html"><i class="fa-solid fa-location-dot"></i>STORE LOCATION</a>
+                <a href="/html/About.html"><i class="fa-solid fa-address-card"></i>ABOUT</a>
+                <a href="/html/Menu.html"><i class="fa-solid fa-bars"></i>MENU</a>
+            </section>
+        </div>
+    </nav>
+
+    <main class="MainContainer">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="NavigationItems">
+                <h2>DRINKS</h2>
+                <a href="/html/Menu-CoffeeBased.html"><button class="Tab">COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-NonCoffeeDrinks.html"><button class="Tab">NON COFFEE-BASED DRINKS</button></a>
+                <a href="/html/Menu-TeaBased.html"><button class="Tab">TEA-BASED DRINKS</button></a>
+                <a href="/html/Menu-FruitBased.html"><button class="Tab">FRUIT-BASED DRINKS</button></a>
+                <a href="/html/Menu-AlcoholBased.html"><button class="Tab">ALCOHOL-BASED DRINKS</button></a>
+                <h2>FOODS</h2>
+                <a href="/html/Menu-Appetizer.html"><button class="Tab">APPETIZER</button></a>
+                <a href="/html/Menu-RiceMeals.html"><button class="Tab">RICE MEALS</button></a>
+                <a href="/html/Menu-Pasta.html"><button class="Tab">PASTA</button></a>
+                <a href="/html/Menu-Pastries.html"><button class="Tab">PASTRIES</button></a>
+                <a href="/html/Menu-Sandwiches.html"><button class="Tab">SANDWICHES</button></a>
+                <a href="/html/Menu-Pizza.html"><button class="Tab">PIZZA</button></a>
+                <a href="/html/Menu-PetFood.html"><button class="Tab">PET FOOD</button></a>
+            </div>
+        </nav>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/img/TEA/lemontea.png" alt="Lemon" class="product-image">
+                <div class="product-description">
+                    <h3>Lemon</h3>
+                    <p>Refreshing citrusy tea with a tangy lemon zest.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/Blueberrytea.png" alt="Blueberry" class="product-image">
+                <div class="product-description">
+                    <h3>Blueberry</h3>
+                    <p>Sweet and slightly tart blueberry infusion for a fruity twist.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/greenappletea.png" alt="Green Apple" class="product-image">
+                <div class="product-description">
+                    <h3>Green Apple</h3>
+                    <p>Crisp, refreshing tea with the tang of green apples.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/lychee-removebg-preview.png" alt="Lychee" class="product-image">
+                <div class="product-description">
+                    <h3>Lychee</h3>
+                    <p>Fragrant, floral tea with the sweet essence of lychee fruit.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/passionfruit-removebg-preview.png" alt="Passion Fruit" class="product-image">
+                <div class="product-description">
+                    <h3>Passion Fruit</h3>
+                    <p>Tropical tea with a vibrant, tangy passion fruit flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/mangotea-removebg-preview.png" alt="Mangga" class="product-image">
+                <div class="product-description">
+                    <h3>Mangga</h3>
+                    <p>Smooth and sweet tea infused with ripe mango flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/chamomile-removebg-preview.png" alt="Chamomile" class="product-image">
+                <div class="product-description">
+                    <h3>Chamomile</h3>
+                    <p>Calming, herbal tea with a light, floral taste.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/redberry-removebg-preview.png" alt="Red Berry" class="product-image">
+                <div class="product-description">
+                    <h3>Red Berry</h3>
+                    <p>A blend of rich, sweet berries for a naturally fruity tea.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/lemograss-removebg-preview.png" alt="Lemon Grass" class="product-image">
+                <div class="product-description">
+                    <h3>Lemon Grass</h3>
+                    <p>Aromatic tea with a refreshing lemony and herbal note.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/earlgrey-removebg-preview.png" alt="Earl Grey" class="product-image">
+                <div class="product-description">
+                    <h3>Earl Grey</h3>
+                    <p>Classic black tea infused with aromatic bergamot oil.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/TEA/jasmine-removebg-preview.png" alt="Jasmine" class="product-image">
+                <div class="product-description">
+                    <h3>Jasmine</h3>
+                    <p>Delicate, fragrant tea with a soothing jasmine blossom scent.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/matcha_latte-removebg-preview.png" alt="Matcha Latte" class="product-image">
+                <div class="product-description">
+                    <h3>Matcha Latte</h3>
+                    <p>Smooth and creamy latte made with finely ground matcha powder.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/matchafrappe-removebg-preview.png" alt="Matcha Frappe" class="product-image">
+                <div class="product-description">
+                    <h3>Matcha Frappe</h3>
+                    <p>Icy, blended matcha drink for a cool and energizing treat.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/TEA/straberrymatcha-removebg-preview.png" alt="Strawberry Matcha" class="product-image">
+                <div class="product-description">
+                    <h3>Strawberry Matcha</h3>
+                    <p>A vibrant combination of earthy matcha and sweet strawberry.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/mangomatcha-removebg-preview.png" alt="Mango Matcha" class="product-image">
+                <div class="product-description">
+                    <h3>Mango Matcha</h3>
+                    <p>A tropical twist with sweet mango and rich matcha flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/classic_milktea-removebg-preview.png" alt="Classic Milk tea" class="product-image">
+                <div class="product-description">
+                    <h3>Classic Milk tea</h3>
+                    <p>Traditional black tea with creamy milk and a hint of sweetness.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/TEA/Milktea-Taro.png" alt="Taro Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Taro Milk Tea</h3>
+                    <p>Creamy milk tea infused with the sweet, nutty flavor of taro root.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/hazelnut_milktea-removebg-preview (1).png" alt="Hazelnut Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Hazelnut Milk Tea</h3>
+                    <p>Rich milk tea with a smooth, nutty hazelnut infusion.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/Milktea-Caramel.png" alt="Caramel Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Caramel Milk Tea</h3>
+                    <p>Sweet milk tea with a luscious caramel flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/TEA/strawberrymilktea-removebg-preview.png" alt="Strawberry Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Strawberry Milk Tea</h3>
+                    <p>Creamy milk tea with a fruity, refreshing strawberry flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/blueberrymilktea-removebg-preview.png" alt="Blueberry Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Blueberry Milk Tea</h3>
+                    <p>A delicious blend of creamy milk tea and tangy blueberry essence.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/honeydewMT-removebg-preview.png" alt="HoneyDew Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>HoneyDew Milk Tea</h3>
+                    <p>Sweet and creamy milk tea with the refreshing taste of honeydew melon.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/img/TEA/wintermelon-removebg-preview.png" alt="Wintermelon Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Wintermelon Milk Tea</h3>
+                    <p>Smooth milk tea with the mildly sweet and subtle flavor of wintermelon.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/okinawaMT-removebg-preview.png" alt="Okinawa Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Okinawa Milk Tea</h3>
+                    <p>A rich, caramelized milk tea with a deep, earthy flavor from Okinawa brown sugar.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/creamyBlueberryFrappe.png" alt="Creamy Blueberry Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Creamy Blueberry Milk Tea</h3>
+                    <p>Silky smooth milk tea with a burst of creamy blueberry flavor.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/CreamyTaroFrappe.png" alt="Creamy Taro Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Creamy Taro Milk Tea</h3>
+                    <p>Creamy, smooth milk tea with the sweet, earthy flavor of taro root.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/img/TEA/creamycookieMT.png" alt="Creamy Cookie Milk Tea" class="product-image">
+                <div class="product-description">
+                    <h3>Creamy Cookie Milk Tea</h3>
+                    <p>Milk tea with a sweet, indulgent cookie flavor and creamy texture.</p>
+                    <p>Tall    - ₱99</p>
+                    <p>Venti   - ₱109</p>
+                    <p>Grande  - ₱119</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2024 Urban Brew. All rights reserved.
+    </footer>
+
+    <script src="/Javascript/BodyAndNav.js"></script>
+    <script src="/Javascript/Menu.js"></script>
+
+</body>
+</html>
