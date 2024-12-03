@@ -188,7 +188,7 @@ a{
 
 @media (max-width: 768px) {
     body{
-        background-image: url(/img/background/2.png);
+        background-image: url('../img/background/2.png');
     }
     .NavigationBarItems {
         display: none; /* Hidden initially */
