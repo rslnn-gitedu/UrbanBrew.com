@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/BodyandNav.css">
+    <link rel="stylesheet" href="../css/Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>UrbanBrewPasta</title>
+</head>
+<body>
+    
+    <nav class="NavigationBar">
+        <div class="NavigationContent">
+            <section class="NavigationBarLOGO">
+                <a href="Home.html"><img src="../img/LOGO/LOGO.png" alt="LOGO"></a>
+                <a href="Home.html" id="NavUrbanBrew">URBAN BREW</a>
+            </section>
+            <button class="hamburgerTOP" onclick="toggleNavBar()">☰</button>
+            <section class="NavigationBarItems">
+                <a href="StoreLocation.html"><i class="fa-solid fa-location-dot"></i>STORE LOCATION</a>
+                <a href="About.html"><i class="fa-solid fa-address-card"></i>ABOUT</a>
+                <a href="Menu.html"><i class="fa-solid fa-bars"></i>MENU</a>
+            </section>
+        </div>
+    </nav>
+
+    <main class="MainContainer">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="NavigationItems">
+                <h2>DRINKS</h2>
+                <a href="Menu-CoffeeBased.html"><button class="Tab">COFFEE-BASED DRINKS</button></a>
+                <a href="Menu-NonCoffeeDrinks.html"><button class="Tab">NON COFFEE-BASED DRINKS</button></a>
+                <a href="Menu-TeaBased.html"><button class="Tab">TEA-BASED DRINKS</button></a>
+                <a href="Menu-FruitBased.html"><button class="Tab">FRUIT-BASED DRINKS</button></a>
+                <a href="Menu-AlcoholBased.html"><button class="Tab">ALCOHOL-BASED DRINKS</button></a>
+                <h2>FOODS</h2>
+                <a href="Menu-Appetizer.html"><button class="Tab">APPETIZER</button></a>
+                <a href="Menu-RiceMeals.html"><button class="Tab">RICE MEALS</button></a>
+                <a href="Menu-Pasta.html"><button class="Tab">PASTA</button></a>
+                <a href="Menu-Pastries.html"><button class="Tab">PASTRIES</button></a>
+                <a href="Menu-Sandwiches.html"><button class="Tab">SANDWICHES</button></a>
+                <a href="Menu-Pizza.html"><button class="Tab">PIZZA</button></a>
+                <a href="Menu-PetFood.html"><button class="Tab">PET FOOD</button></a>
+            </div>
+        </nav>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../img/PASTA/Meatball_pasta.png" alt="Meatball Pomodoro" class="product-image">
+                <div class="product-description">
+                    <h3>Meatball Pomodoro</h3>
+                    <p>Classic pasta with savory meatballs and tangy tomato sauce.</p>
+                    <p>₱319</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Wild_Mushroom_Pasta_Truffles.png" alt="Wild Mushroom Truffle Pasta" class="product-image">
+                <div class="product-description">
+                    <h3>Wild Mushroom Truffle Pasta</h3>
+                    <p>Creamy pasta with earthy mushrooms and truffle essence.</p>
+                    <p>₱289</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Gambas-Pasta.png" alt="Gambas Pasta" class="product-image">
+                <div class="product-description">
+                    <h3>Gambas Pasta</h3>
+                    <p>Pasta topped with flavorful garlic shrimp.</p>
+                    <p>₱259</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/tuna_pasta.png" alt="Tuna Pasta" class="product-image">
+                <div class="product-description">
+                    <h3>Tuna Pasta</h3>
+                    <p>Light pasta with tuna and herbs.</p>
+                    <p>₱259</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Espanola_Pasta.png" alt="Pasta Espanola" class="product-image">
+                <div class="product-description">
+                    <h3>Pasta Espanola</h3>
+                    <p>A hearty Spanish-style pasta with rich flavors.</p>
+                    <p>₱259</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Shrimp-Alfredo.png" alt="Shrimp Alfredo" class="product-image">
+                <div class="product-description">
+                    <h3>Shrimp Alfredo</h3>
+                    <p>Creamy pasta with juicy shrimp.</p>
+                    <p>₱289</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/chicken-pesto-pasta.png" alt="Chicken Pesto" class="product-image">
+                <div class="product-description">
+                    <h3>Chicken Pesto</h3>
+                    <p>Pasta with chicken and aromatic basil pesto.</p>
+                    <p>₱289</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Hungarian_Pesto.png" alt="Hungarian Pesto" class="product-image">
+                <div class="product-description">
+                    <h3>Hungarian Pesto</h3>
+                    <p>Pesto pasta with a hint of Hungarian sausage.</p>
+                    <p>₱259</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../img/PASTA/Longganisa_penne_pasta.png" alt="Longa Pasta" class="product-image">
+                <div class="product-description">
+                    <h3>Longa Pasta</h3>
+                    <p>Pasta paired with savory longganisa.</p>
+                    <p>₱259</p>
+                </div>
+            </div>
+        </div>
+                    
+    </main>
+
+    <footer class="footer">
+        © 2024 Urban Brew. All rights reserved.
+    </footer>
+
+    <script src="../Javascript/BodyAndNav.js"></script>
+    <script src="../Javascript/Menu.js"></script>
+</body>
+</html>
