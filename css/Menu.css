@@ -2,7 +2,7 @@
 
 .MainContainer{
     display: flex;
-    margin-top: 70px; /* Additional gap if needed */
+    margin-top: 70px;
     padding-top: 0; 
     overflow: hidden; 
 }
@@ -25,7 +25,7 @@
 
 .NavigationItems.show {
     display: flex;
-    transform: translateX(0); /* When the menu is shown, it slides in */
+    transform: translateX(0); 
     z-index: 1000;
     top: 62px;
 }
@@ -52,7 +52,6 @@
     margin: 0;
     }
 
-
 .NavigationItems button:hover{
     box-shadow: 0px 0px 15px inset;
 }
@@ -62,19 +61,15 @@
     color: #CBB381;
 }
 
-
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     padding: 20px;
     max-width: 1200px;
     margin: 0px auto;
     margin-left: 250px;
 }
-
-
-/* Product Card */
 
 .product-card {
     background: none;
@@ -88,10 +83,9 @@
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Hover effect */
+    transform: translateY(-5px);
 }
 
-/* Product Image */
 .product-image {
     max-width: auto;
     border-radius: 10px;
@@ -100,15 +94,18 @@
     height: 130px;
     padding: 5px;
 }
+
 .product-image img{
     max-width: 1200px;
     height: 100%;
 }
+
 .product-image:hover {
     transform: scale(1.2,1.2);
     transition-duration: 3s ease-in-out;
     
 }
+
 .product-description{
     padding: 5px;
     margin: 0px 10px;
@@ -129,11 +126,8 @@
     color: #361500;
 }
 
-
-
-
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 120px;
     left: 20px;
@@ -144,14 +138,14 @@
     cursor: pointer;
     color: white;
 }
+
 .hamburger:hover {
     color: #6b4630;
     transform: scale(1.2,1.2);
 }
 
-/* Hidden Navigation Menu */
 .NavigationMenu.hidden {
-    transform: translateX(-100%); /* Slide out of view */
+    transform: translateX(-100%);
 }
 
 .best-seller-section {
@@ -159,31 +153,30 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: transparent; /* Light beige background */
+    background-color: transparent;
     padding: 0px;
     position: relative;
-    margin-left:300px; /* Space around the section */
-    z-index: 1; /* Ensure it's above other content if needed */
-    width: 100%; /* Add a max width for proper alignment */
-    border-radius: 8px; /* Rounded corners */
+    margin-left:300px;
+    z-index: 1;
+    width: 100%;
+    border-radius: 8px;
     height: auto;
 }
 
 .vertical-title {
-    writing-mode: vertical-rl; /* Vertical text orientation */
+    writing-mode: vertical-rl;
     text-orientation: upright;
     font-weight: bold;
-    color: #361500; /* Coffee brown color */
+    color: #361500;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
-    height: 90%;/* Full height alignment */
-    display: flex; /* Align title within */
-    align-items: center; /* Center vertically */
+    height: 90%;
+    display: flex;
+    align-items: center;
     align-content: center;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
 }
-
 
 .content {
     display: flex;
@@ -196,7 +189,7 @@
 }
 
 .text:hover , .vertical-title:hover{
-    transform: translateY(-5px); /* Hover effect */
+    transform: translateY(-5px);
     transition-duration: 1s;/
 }
 
@@ -205,6 +198,7 @@
     font-weight: bold;
     color: #6b4630;
 }
+
 h1 {
     font-size: 35px;
     font-weight: bold;
@@ -213,7 +207,7 @@ h1 {
 .text p {
     font-size: 14px;
     line-height: 1.5;
-    color: #4b3028; /* Text color matching coffee theme */
+    color: #4b3028;
     text-align: justify;
 
 }
@@ -223,17 +217,17 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
     color: #6b4630  ;
-}; /* Golden brown accent for price */
+};
 
 
 .BESTimage {
-    display: flex; /* Ensures the image is centered if needed */
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
     height: 300px;
-    overflow: hidden; /* Ensures the image doesn't overflow */
-    transition: all 0.5s ease; /* Smooth transition for hover */
+    overflow: hidden;
+    transition: all 0.5s ease;
     padding: 0;
 }
 
@@ -245,31 +239,30 @@ h1 {
 .BESTimage img {
     width: 300px;
     height: 400px;
-    object-fit: cover; /* Maintain aspect ratio, fill container */
-    transition: all 0.5s ease; /* Smooth transition for scaling */
+    object-fit: cover;
+    transition: all 0.5s ease;
 }
 
-/* Fix for overall layout spacing */
 .menu-category {
-    margin-top: 30px; /* Add spacing below menu categories */
+    margin-top: 30px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4e8d4; /* Matches the coffee shop vibe */
+    background-color: #f4e8d4;
 }
 
 
 @media (max-width: 768px) {
     .NavigationItems {
-        display: none; /* Hide the navigation items on small screens */
+        display: none;
         padding-top: 10px;
     }
 
     .NavigationItems.show {
         display: flex;
-        transform: translateX(0); /* When the menu is shown, it slides in */
+        transform: translateX(0);
         background-color: rgb(203, 179, 129,0.9);
     }
 
@@ -299,59 +292,60 @@ body {
     }
 
     .MainContainer {
-        flex-direction: column; /* Stack the navigation menu and product grid */
+        flex-direction: column; 
         height: auto;
     }
 
     .NavigationItems button {
-        font-size: 24px; /* Adjust button font size */
-        height: auto; /* Allow buttons to resize */
-        padding: 10px; /* Adjust padding */
+        font-size: 24px;
+        height: auto; 
+        padding: 10px; 
     }
 
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr);
         margin-left: auto;
     }
     .product-card {
         display: flex;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center align items */
-        text-align: center; /* Center align text */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .product-image {
         max-width: 100%;
-        height: 100%; /* Smaller image size */
+        height: 100%;
     }
 
     .product-card h3 {
-        font-size: 28px; /* Adjust title size */
+        font-size: 28px;
     }
 
     .product-card p {
-        font-size: 20px; /* Adjust description size */
+        font-size: 20px;
     }
 
 
     .best-seller-section {
         display:block;
-        margin: 0px 20px 50px 90px; /* Space around the section */
-        z-index: 1; /* Ensure it's above other content if needed */
-        width: 90%; /* Add a max width for proper alignment */
-        border-radius: 8px; /* Rounded corners */
+        margin: 0px 20px 50px 90px;
+        z-index: 1;
+        width: 90%;
         height:auto;
     }
+
     .content {
         display: flex;
         gap: 5px;
     }
+
     .text h3 {
         font-size: 35px;
         font-weight: bold;
-        color: #6b4630;
         margin-top: 0;
     }
+
     h1 {
         font-size: 60px;
     }
@@ -359,38 +353,34 @@ body {
     .text p {
         font-size: 22px;
         line-height: 1.5;
-        color: #4b3028; /* Text color matching coffee theme */
-    
     }
     
     .text .price {
         font-size: 30px;
         font-weight: bold;
         margin-top: 10px;
-        color: #6b4630  ;
-    }; /* Golden brown accent for price */
+    };
     
     .BESTimage {
-        width: 100%; /* Adjust the container size */
+        width: 100%;
         height: auto;
     }
     .BESTimage img {
-        width: 100%; /* Adjust the image size */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 
     .vertical-title {
         writing-mode:horizontal-tb;
         font-weight: bold;
-        color: #361500; /* Coffee brown color */
         margin-right: 20px;
         margin-left: 20px;
         padding-left: 10px;
-        height: 100%; /* Full height alignment */
-        display: flex; /* Align title within */
-        align-items: center; /* Center vertically */
+        height: 100%;
+        display: flex;
+        align-items: center;
         align-content: center;
-        justify-content:center; /* Center horizontally */
+        justify-content:center;
     }
 
     .hamburger {
@@ -405,7 +395,6 @@ body {
 }
 
 
-/* Small Screens: Mobile devices (480px and below) */
 @media (max-width: 480px) {
     .NavigationItems {
         padding-top: 50px;
@@ -427,31 +416,31 @@ body {
         }
 
     .product-grid {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr; 
     }
 
     .product-card {
-        padding: 10px; /* Add some breathing room */
+        padding: 10px;
     }
 
     .product-image {
-        width: 80%; /* Smaller size for images */
+        width: 80%;
     }
 
     .product-card h3 {
-        font-size: 20px; /* Smaller title size */
+        font-size: 20px;
     }
 
     .product-card p {
-        font-size: 15px; /* Smaller description size */
+        font-size: 15px;
     }
 
     .best-seller-section {
         display:block;
-        margin: 10px 20px 50px 60px; /* Space around the section */
-        z-index: 1; /* Ensure it's above other content if needed */
-        width: 90%; /* Add a max width for proper alignment */
-        border-radius: 8px; /* Rounded corners */
+        margin: 10px 20px 50px 60px;
+        z-index: 1;
+        width: 90%;
+        border-radius: 8px;
         height: auto;
     }
     .content {
@@ -472,45 +461,35 @@ body {
     .text p {
         font-size: 12px;
         line-height: 1.5;
-        color: #4b3028; /* Text color matching coffee theme */
-    
     }
     
     .text .price {
         font-size: 28px;
         font-weight: bold;
         margin-top: 10px;
-        color: #6b4630  ;
-    }; /* Golden brown accent for price */
+    };
     
     .BESTimage {
-        width: 100%; /* Adjust the container size */
+        width: 100%;
         height: auto;
     }
     .BESTimage img {
-        width: 100%; /* Adjust the image size */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 
     .vertical-title {
         writing-mode:horizontal-tb;
         font-weight: bold;
-        color: #361500; /* Coffee brown color */
         margin-right: 20px;
         margin-left: 20px;
         padding-left: 10px;
-        height: 100%; /* Full height alignment */
-        display: flex; /* Align title within */
-        align-items: center; /* Center vertically */
-        align-content: center;
-        justify-content:flex-start; /* Center horizontally */
+        height: 100%;
+        justify-content:flex-start;
     }
 
     .hamburger {
-        top: 60px;
-        left: 2%;
         font-size: 45px;
-        position: fixed;
     }
     
 
