@@ -6,7 +6,6 @@ main{
     margin-bottom: 0px;
 }
 
-
 .storeLoc{
     display: flex;
     flex-direction: column;
@@ -35,7 +34,6 @@ main{
     transition-duration: 1s;
 }
 
-
 .storeMap{
     display: flex;
     flex-direction: column;
@@ -44,6 +42,7 @@ main{
     align-items: center;
     padding: 40px 0px;
 }
+
 .storeMap iframe{
     width: 800px;
     height: 350px;
@@ -55,7 +54,6 @@ main{
     transition-timing-function: linear;
     transition-duration: 1s;
 }
-
 
 h1{
     font-size: 50px;
@@ -77,7 +75,6 @@ h1:hover{
     color: #341400;
     margin: 25px 250px ;
 }
-
 
 @media (max-width: 768px) { 
     .storeLoc{
@@ -111,13 +108,6 @@ h1:hover{
 }
 
 
-
-
-
-
-
-
-
 @media (max-width: 480px) { 
     .storeLoc{
         gap: 40px;
@@ -147,7 +137,6 @@ h1:hover{
         margin: 25px 20px ;
     }
     
-
 }
 
 
