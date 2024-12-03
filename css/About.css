@@ -65,7 +65,6 @@ video{
     transition-duration: 1s;
 }
 
-
 .storeOperations{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -97,47 +96,40 @@ main i{
 }
 
 
-/* unvisited link */
 main a:link {
     
     color: #361500;
   text-decoration: none;
   }
   
-  /* visited link */
   main  a:visited {
     color:blueviolet;
   }
   
-  /* mouse over link */
   main  a:hover {
 
     color: #6b4630;
   }
   
-  /* selected link */
   main   a:active {
     color: blue;
   }
 
   @media (max-width: 768px) {
 
+    h2{
+        font-size: 18px;
+    }
+
     .aboutUsContext, .missionContext, .visionContext {
-        display: flex; /* Change block to flex */
-        flex-direction: column; /* Stack items vertically */
+        display: flex; 
+        flex-direction: column;
         gap: 0px;
         margin: 0px 50px;
         padding: 0px 10px;
         align-items: center;
         justify-content: center;
         background: none;
-    }
-    .missionContext .image {
-        order: 1; /* Move the image to the second position */
-    }
-
-    .missionContext .context {
-        order: 2; /* Move the text to the first position */
     }
 
     video{
@@ -154,6 +146,15 @@ main a:link {
         align-items: center;
         align-content: center;
     }
+
+    .missionContext .image {
+        order: 1; 
+    }
+
+    .missionContext .context {
+        order: 2;
+    }
+
     .Mission img, .Vision img{
         width: 530px;
         height: 280px;
@@ -174,10 +175,6 @@ main a:link {
     background: none;
     }
 
-    h2{
-        font-size: 18px;
-    }
-
     main i{
         font-size: 15px;
     }
@@ -188,6 +185,15 @@ main a:link {
     p{
         font-size: 18px; 
     }
+        
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
     .aboutUsContext, .missionContext, .visionContext {
         gap: 0px;
         margin: 0px 30px;
@@ -218,15 +224,6 @@ main a:link {
     }
     .Location-item {
         padding-bottom: 20px;
-    }
-    
-
-    h1{
-        font-size: 50px;
-    }
-
-    h2{
-        font-size: 18px;
     }
 
     main i{
