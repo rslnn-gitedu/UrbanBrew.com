@@ -1,0 +1,146 @@
+main{
+    display: block;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.storeLoc{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+    gap: 100px;
+}
+
+.streetView{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+.streetView img{
+    width: 800px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.streetView img:hover{
+    transform: scale(1.1,1.1);
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+
+.storeMap{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.storeMap iframe{
+    width: 800px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.storeMap iframe:hover{
+    transform: scale(1.1,1.1);
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+
+h1{
+    font-size: 50px;
+    color: #341400;
+    padding: 0;
+    margin: 0;
+}
+
+h1:hover{
+    text-shadow: 5px 5px 10px white;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.storeLoc p{
+    justify-content: center;
+    font-size: 18px;
+    text-align: justify;
+    color: #361500;
+    margin: 25px 250px ;
+}
+
+@media (max-width: 768px) { 
+    .storeLoc{
+        gap: 100px;
+    }
+    .streetView img{
+        width: 650px;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .storeMap{
+        padding: 40px 0px;
+    }
+    .storeMap iframe{
+        width: 650px;
+        height: 350px;
+        border-radius: 20px;
+        margin-bottom: 65px;
+    }
+
+    h1{
+        font-size: 50px;
+        margin-top: 60px;
+    }
+    
+    .storeLoc p{
+        font-size: 26px;
+        margin: 50px 20px ;
+    }
+
+}
+
+
+@media (max-width: 480px) { 
+    .storeLoc{
+        gap: 40px;
+    }
+
+    .streetView img{
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .storeMap{
+        padding: 40px 0px;
+    }
+    .storeMap iframe{
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        margin-bottom: 65px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    
+    .storeLoc p{
+        font-size: 14px;
+        margin: 25px 20px ;
+    }
+    
+}
+
+
+
+
+
+

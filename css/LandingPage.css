@@ -1,0 +1,179 @@
+.div1 {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin: 0px 20px;
+    padding: 0;
+    gap: 10px;
+}
+
+.LeftContainer {
+    height: 700px;
+    width: 677.89px;
+    margin: 0;
+    padding: 0;
+}
+
+.LeftContainer h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #341400;
+    padding: 0;
+}
+
+.LeftContainer p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 0px 0px 40px 0px;
+    color: #361500;
+
+}
+
+.LeftContainer section {
+    display: flex;
+    justify-content: center;
+}
+
+.LeftContainer img {
+    height: 200px;
+    width: 350px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+
+.LeftContainer img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+}
+
+h1:hover {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.RightContainer img {
+    height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.RightContainer img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+}
+
+.RightContainer h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #341400;
+    margin: 0;
+}
+
+.RightContainer p {
+    font-size: 16px;
+    text-align: center;
+    color: #361500;
+    margin: 20px 0px 50px 0px;
+}
+
+.RightContainer {
+    height: 700px;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.RightContainer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .div1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+        padding: 50px;
+    }
+
+    .RightContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #frappyhour {
+        order: 2;
+    }
+
+    .LeftContainer,
+    .RightContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .LeftContainer h1,
+    .RightContainer h1 {
+        font-size: 42px;
+    }
+
+    .LeftContainer p,
+    .RightContainer p {
+        font-size: 24px;
+    }
+
+    .LeftContainer img,
+    .RightContainer img {
+        width: 450px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .div1 {
+        gap: 60px;
+        padding: 20px;
+    }
+
+    .LeftContainer h1,
+    .RightContainer h1 {
+        font-size: 34px;
+    }
+
+    .LeftContainer p,
+    .RightContainer p {
+        font-size: 18px;
+    }
+
+    .LeftContainer img,
+    .RightContainer img {
+        width: 200px;
+        height: auto;
+    }
+
+}
