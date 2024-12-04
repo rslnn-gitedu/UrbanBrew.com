@@ -189,47 +189,47 @@ p {
 }
 
 .slide:nth-child(1) {
-    background-image: url('/img/satisfied customers/1.jpg');
+    background-image: url('../img/satisfied customers/1.jpg');
 }
 
 .slide:nth-child(2) {
-    background-image: url('/img/satisfied customers/2.jpg');
+    background-image: url('../img/satisfied customers/2.jpg');
 }
 
 .slide:nth-child(3) {
-    background-image: url('/img/satisfied customers/3.jpg');
+    background-image: url('../img/satisfied customers/3.jpg');
 }
 
 .slide:nth-child(4) {
-    background-image: url('/img/satisfied customers/4.jpg');
+    background-image: url('../img/satisfied customers/4.jpg');
 }
 
 .slide:nth-child(5) {
-    background-image: url('/img/satisfied customers/5.jpeg');
+    background-image: url('../img/satisfied customers/5.jpeg');
 }
 
 .slide:nth-child(6) {
-    background-image: url('/img/satisfied customers/6.jpg');
+    background-image: url('../img/satisfied customers/6.jpg');
 }
 
 .slide:nth-child(7) {
-    background-image: url('/img/satisfied customers/7.jpeg');
+    background-image: url('../img/satisfied customers/7.jpeg');
 }
 
 .slide:nth-child(8) {
-    background-image: url('/img/satisfied customers/8.jpeg');
+    background-image: url('../img/satisfied customers/8.jpeg');
 }
 
 .slide:nth-child(9) {
-    background-image: url('/img/satisfied customers/9.jpg');
+    background-image: url('../img/satisfied customers/9.jpg');
 }
 
 .slide:nth-child(10) {
-    background-image: url('/img/satisfied customers/10.jpg');
+    background-image: url('../img/satisfied customers/10.jpg');
 }
 
 .slide:nth-child(11) {
-    background-image: url('/img/satisfied customers/11.jpg');
+    background-image: url('../img/satisfied customers/11.jpg');
 }
 
 @keyframes scroll {
