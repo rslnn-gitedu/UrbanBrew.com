@@ -1,6 +1,6 @@
 window.onload = function() {
     var buttons = document.querySelectorAll('.NavigationItems a button');
-    var currentPage = window.location.pathname;
+    var currentPage = window.location.pathname.split('/').pop();
 
     buttons.forEach(function(button) {
         var buttonLink = button.parentElement.getAttribute('href'); 
